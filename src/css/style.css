@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* { 
+    box-sizing: border-box; 
+}
 
 /* ---- force scrollbar ---- */
 html { 
@@ -12,49 +14,67 @@ body {
 
 /* ---- grid ---- */
 .grid {
-  max-width: 100%;
+/* max-width: 100%; */
 }
 
 /* ---- clear fix ---- */
 .grid:after {
-  content: '';
-  display: block;
-  clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 
 /* ---- .grid-item ---- */
-.grid-sizer,
-.grid-item {
-  width: 33.333%;
-  height: auto;
+.grid-sizer, .grid-item {
+    width: 25%;
+    height: auto;
 }
 
-.grid-item--width2 { 
-    width:  66.666%; 
+.grid-item-width2 { 
+    width:  50%; 
+}
+
+.grid-item-width3 { 
+    width:  50%; 
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .grid-sizer, .grid-item {
+        width: 33.333%;
+    }
+    .grid-item-width2 { 
+        width:  66.666%; 
+    }
+    .grid-item-width3 {
+        width: 100%;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  .grid-sizer, .grid-item {
-    width: 50%;
-  }
-    .grid-item--width2 {
+    .grid-sizer, .grid-item {
+        width: 50%;
+    }
+    .grid-item-width2 {
+        width: 100%;
+    }
+    .grid-item-width3 {
         width: 100%;
     }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
     .grid-sizer, .grid-item {
-    width: 100%;
-  }
+        width: 100%;
+    }
 }
 
 .grid-item {
-  float: left;
+    float: left;
 }
 
 .grid-item img {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 /* ---- typography ---- */
@@ -87,13 +107,13 @@ body {
 
 /* ---- hover ---- */
 .hovereffect {
-width:100%;
-height:100%;
-float:left;
-overflow:hidden;
-position:relative;
-text-align:center;
-cursor:default;
+    width:100%;
+    height:100%;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    cursor:default;
 }
 
 .hovereffect .overlay {
@@ -134,16 +154,22 @@ padding:7px 14px;
 width: 50%;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+a.info {
+font-size: 2em;
+}
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
-  a.info {
-    font-size: 2em;
-  }
+a.info {
+font-size: 2em;
+}
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  a.info {
-    font-size: 4em;
-  }
+a.info {
+font-size: 4em;
+}
 }
 
 .hovereffect a.info:hover {
@@ -176,18 +202,18 @@ transition-delay:.2s;
 
 /* ---- navbar ---- */
 #logo-top {
-    width: 31%;
+width: 31%;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  #logo-top {
-    width: 40%;
-  }
+#logo-top {
+width: 40%;
+}
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  #logo-top {
-    width: 75%;
-    margin: 1em 0 0 1em;
-  }
+#logo-top {
+width: 75%;
+margin: 1em 0 0 1em;
+}
 }
