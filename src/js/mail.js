@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$("#contact-form").submit(function() {
      $.ajax({
         type: "POST",
-        url: "/php/mail.php",
+        url: "src/php/mail.php",
         data: $(this).serialize()
          
     }).done(function(msg) {
