@@ -3,9 +3,17 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="De design portfolio van Studio Lamby. Een ICT & Media student.">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/style.css">
+    
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-101293969-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
 
     <title>Studio Lamby</title>
     </head>
@@ -20,7 +28,7 @@
         
         <div class="grid-item">
             <div class="hovereffect">
-                <img src="src/images/profile.jpg">
+                <img class="lozad" src="src/images/profile.jpg">
                 <div class="overlay">
                    <a class="info" href="https://nl.linkedin.com/in/ying-hing-lam-9b778873" target="_blank">Linked In</a>
                 </div>
@@ -29,7 +37,7 @@
         
         <div class="grid-item">
                     <div class="hovereffect">
-                <img src="src/images/youtube.jpg">
+                <img class="lozad" src="src/images/youtube.jpg">
                 <div class="overlay">
                     <a class="info" href="https://www.youtube.com/channel/UCA3dISGFk0ImRjS1fJo4rWA" target="_blank">Youtube</a>
                 </div>
@@ -38,7 +46,7 @@
         
         <div class="grid-item">
             <div class="hovereffect">
-                <img src="src/images/toddly.jpg">
+                <img class="lozad" src="src/images/toddly.jpg">
                 <div class="overlay">
                     <a class="info" href="src/pdf/toddly_guide.pdf" target="_blank">Toddly</a>
                 </div>
@@ -47,7 +55,7 @@
         
         <div class="grid-item grid-item-width2">
             <div class="hovereffect">
-                <img src="src/images/vegano.jpg">
+                <img class="lozad" src="src/images/vegano.jpg">
                 <div class="overlay">
                     <a class="info" href="src/pdf/vegano_mobile.png" target="_blank">Vegano</a>
                 </div>
@@ -56,7 +64,7 @@
         
         <div class="grid-item">
             <div class="hovereffect">
-                <img src="src/images/wasabi.jpg">
+                <img class="lozad" src="src/images/wasabi.jpg">
                 <div class="overlay">
                     <a class="info" href="src/pdf/wasabi_takeout.pdf" target="_blank">Wasabi</a>
                 </div>
@@ -65,7 +73,7 @@
         
         <div class="grid-item">
             <div class="hovereffect">
-                <img src="src/images/chilld.jpg">
+                <img class="lozad" src="src/images/chilld.jpg">
                 <div class="overlay">
                     <a class="info" href="src/pdf/chilld_animatie.gif" target="_blank">Chill'd</a>
                 </div>
@@ -74,7 +82,7 @@
         
         <div class="grid-item">
             <div class="hovereffect">
-                <img src="src/images/maerschalk.jpg">
+                <img class="lozad" src="src/images/maerschalk.jpg">
                 <div class="overlay">
                     <a class="info" href="src/pdf/maerschalk_3d.pdf" target="_blank">Maerschalk</a>
                 </div>
@@ -83,7 +91,7 @@
         
         <div class="grid-item">
             <div class="hovereffect">
-                <img src="src/images/datamiljonair.jpg">
+                <img class="lozad" src="src/images/datamiljonair.jpg">
                 <div class="overlay">
                     <a class="info" href="src/pdf/datamiljonair.pdf" target="_blank">Data Miljonair</a>
                 </div>
@@ -92,7 +100,7 @@
         
         <div class="grid-item">
             <div class="hovereffect">
-                <img src="src/images/lamby.jpg">
+                <img class="lozad" src="src/images/lamby.jpg">
                 <div class="overlay">
                     <a class="info" href="src/pdf/lamby_document.pdf" target="_blank">Lamby</a>
                 </div>
@@ -101,7 +109,7 @@
         
         <div class="grid-item">
             <div class="hovereffect">
-                <img src="src/images/dailyui.jpg">
+                <img class="lozad" src="src/images/dailyui.jpg">
                 <div class="overlay">
                     <a class="info" href="src/pdf/dailyui_challange.pdf" target="_blank">Daily UI</a>
                 </div>
@@ -109,19 +117,74 @@
         </div>
         
         <div class="grid-item grid-item-width3">
-            <img src="src/images/contact.jpg">
+           
+<!--             <form id="contact-form" method="POST">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+                
+            </form>
+            
+            <div id="result"></div> -->
+            
+            <form id="contact-form" method="POST">
+        <p>Dear Martijn,</p>
+        <p>My <label for="name">name</label> is</p>
+          <input type="text" id="name" name="name" minlength="3" placeholder="(your name here)" required>
+      
+        <p>and my
+          <label for="email">email address</label> is
+          <input type="email" id="email" name="email" placeholder="(your email address)" required>
+        </p>
+      
+        <p> I have a
+          <label for="message">message</label> for you,</p>
+        <p>
+          <textarea name="message" id="message" placeholder="(your msg here)" class="expanding" required></textarea>
+        </p>
+        <p>
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-white" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" xml:space="preserve"><g><path d="M83.594,77.945h-7.033l9.153-9.155c1.562-1.562,1.562-4.095-0.001-5.656L41.317,18.738   c-0.781-0.781-1.805-1.171-2.829-1.171c-1.024,0-2.047,0.391-2.829,1.171L10.292,44.106c-0.75,0.75-1.171,1.768-1.171,2.829   s0.421,2.079,1.172,2.829l28.182,28.18l-6.133,0.002c-3.524,0-6.408,2.883-6.408,6.406c0,3.522,2.883,6.405,6.408,6.405h51.253   c3.522,0,6.406-2.883,6.406-6.405C90,80.828,87.116,77.945,83.594,77.945z M44.129,77.941L13.12,46.935l25.368-25.368   l44.396,44.396L70.903,77.945l-7.791,7.707H51.84L44.129,77.941L44.129,77.941L44.129,77.941z M32.341,86.757   c-1.305,0-2.408-1.102-2.408-2.405c0-1.305,1.103-2.406,2.409-2.406l10.131-0.003l4.814,4.814H32.341z M83.594,86.757h-15.91   l4.864-4.812h11.046c1.305,0,2.406,1.102,2.406,2.406C86,85.655,84.898,86.757,83.594,86.757z"/><path d="M67.682,72.105c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l5.438-5.434   c0.188-0.188,0.293-0.441,0.293-0.707s-0.105-0.52-0.293-0.707l-5.438-5.436c-0.391-0.391-1.023-0.391-1.414,0l-5.435,5.436   c-0.188,0.188-0.293,0.442-0.293,0.707c0,0.266,0.105,0.52,0.293,0.707L67.682,72.105z"/><path d="M45.739,71.495c0.256,0,0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L22.89,46.23   c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l23.556,23.558C45.227,71.397,45.483,71.495,45.739,71.495z"/><path d="M40.805,59.729c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414   L26.514,42.607c-0.391-0.391-1.023-0.391-1.414,0c-0.391,0.39-0.391,1.023,0,1.414L40.805,59.729z"/><path d="M9.085,17.618c0.001,0,0.002,0,0.002,0c0.787-0.008,1.694,0.036,2.323,0.099c4.662,0.46,9.057,2.541,12.375,5.86   c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.391-0.39,0.391-1.023,0-1.414   c-3.645-3.645-8.472-5.931-13.593-6.436c-0.69-0.068-1.699-0.106-2.524-0.108c-0.553,0.001-0.999,0.45-0.998,1.002   C8.086,17.172,8.534,17.618,9.085,17.618z"/><path d="M8.085,22.847c-0.013,0.552,0.425,1.01,0.977,1.022c3.785,0.085,7.366,1.629,10.084,4.348   c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.391-0.39,0.391-1.023,0-1.414   c-3.084-3.084-7.151-4.836-11.453-4.933C8.553,21.817,8.098,22.294,8.085,22.847z"/><path d="M11.249,30.755c1.285,0.333,2.463,1.008,3.407,1.952C14.85,32.902,15.106,33,15.362,33s0.512-0.098,0.707-0.293   c0.391-0.39,0.391-1.023,0-1.414c-1.195-1.196-2.689-2.051-4.32-2.474c-0.659-0.17-1.458-0.263-1.984-0.293   C9.533,28.511,9.3,28.507,9.071,28.51c-0.552,0.008-0.994,0.462-0.986,1.014s0.479,0.997,1.014,0.986   c0.182-0.003,0.365,0.001,0.55,0.012C10.193,30.553,10.822,30.645,11.249,30.755z"/></g></svg>
+            <small>send</small>
+          </button>
+        </p>
+      </form>
+      <div id="result"></div>
+           
+            <!--
+            <picture>
+            <source srcset="src/images/contact2.jpg" media="(max-width: 480px)">    
+            <source srcset="src/images/contact1.jpg">
+            <img src="src/images/contact1.jpg" alt="">
+            </picture> -->
+            
         </div>
-        
+
     </div>
+    
+    <footer class="page-footer">
+        <div class="footer-copyright text-center py-3">© 2019 Copyright: Studio Lamby
+        </div>
+    </footer>
+    
+</div>
 
    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js'></script>
     <script src="src/js/masonry.pkgd.min.js"></script>
     <script src="src/js/lottie.js"></script>
+    <script src="src/js/mail.js"></script>
     <script src="src/js//animatie.js"></script>
     <script src="src/js/custom.js"></script>
   </body>
