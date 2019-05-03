@@ -44,6 +44,4 @@ if(isset($_POST['email'], $_POST['message'])){
        echo 'Mail is broken';
 }
 
-echo "<script>location.href='../../index.html'</script>";
-
 ?>

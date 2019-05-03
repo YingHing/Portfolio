@@ -19,9 +19,9 @@
     </head>
   
     <body>
-        <div class="container-fluid pl-0 pr-0" style="margin: auto;">
-        <nav class="navbar navbar-expand-lg fixed-top mt-4 ml-2">
-                <div id="logo-top" class="img-fluid"></div>
+        <div class="container-fluid px-5 pt-5">
+        <nav class="navbar navbar-expand-lg fixed-top mt-5 ml-5">
+                <div id="logo-top" class="img-fluid pt-3"></div>
         </nav>
         <div class="grid">
         <div class="grid-sizer"></div>
@@ -117,10 +117,31 @@
         </div>
         
         <div class="grid-item grid-item-width3">
-           
+            <div class="hovereffect">
+                <img src="src/images/vegano.jpg">
+                <div class="overlay">
+                    <a class="info" href="src/pdf/vegano_mobile.png" target="_blank">Vegano</a>
+                </div>
+            </div>
+        </div>
         
+        <div class="grid-item grid-item-width4">
+            <div class="container">
+                <div class="pt-xl">
+                    <div class="col-md-12">
+                        <h1 class="padding-menu-height">For any questions or request</h1>
+                        <h2>
+                         studiolamby@gmail.com   
+                        </h2>     
+                    </div>
+                </div>
+            </div>
+        </div>
+           
 
-        <form id="contact-form" method="POST" action="src/php/mail.php">
+
+<!--
+        <form id="contact-form" method="post">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -137,15 +158,13 @@
             
             <div id="result"></div>
 
-            
-           
-            
-<!--
+
             <picture>
             <source srcset="src/images/contact2.jpg" media="(max-width: 480px)">    
             <source srcset="src/images/contact1.jpg">
             <img src="src/images/contact1.jpg" alt="">
             </picture>
+            
 -->
             
         </div>
@@ -160,7 +179,7 @@
 </div>
 
    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>

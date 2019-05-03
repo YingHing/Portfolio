@@ -9,7 +9,41 @@ html {
 }
 
 body { 
-    font-family: sans-serif; 
+    color: #0d0d0d;
+    background: #171722;
+}
+
+@font-face {
+  font-family: 'Helvetica Thin';
+  src: url(../font/HelveticaNeue_Thin.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Medium';
+  src: url(../font/HelveticaNeue_Medium.woff) format('woff');
+}
+
+.container {
+    max-width: 60%;
+}
+
+.pt-6 {
+    padding-top: 5rem !important;
+}
+
+.pt-xl {
+    padding-top: 5rem !important;
+}
+
+h1, h2 {
+    font-family: 'Helvetica Medium';
+    font-size: 3.5rem;
+    color: #edf2f4
+}
+
+h2 {
+    margin-bottom: 4rem;
+    text-decoration: overline;
 }
 
 /* ---- grid ---- */
@@ -38,6 +72,10 @@ body {
     width:  50%; 
 }
 
+.grid-item-width4 { 
+    width:  100%; 
+}
+
 @media (min-width: 768px) and (max-width: 1280px) {
     .grid-sizer, .grid-item {
         width: 33.333%;
@@ -46,6 +84,9 @@ body {
         width:  66.666%; 
     }
     .grid-item-width3 {
+        width: 100%;
+    }
+    .grid-item-width4 {
         width: 100%;
     }
 }
@@ -58,6 +99,9 @@ body {
         width: 100%;
     }
     .grid-item-width3 {
+        width: 100%;
+    }
+    .grid-item-width4 {
         width: 100%;
     }
 }
@@ -202,7 +246,13 @@ body {
 
 /* ---- navbar ---- */
 #logo-top {
-    width: 31%;
+    width: 20%;
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    #logo-top {
+        width: 30%;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -213,7 +263,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
     #logo-top {
-        width: 75%;
+        width: 50%;
         margin: 1em 0 0 1em;
     }
 }
@@ -235,10 +285,10 @@ body {
 
 /* ---- footer ---- */
 .page-footer {
-    background-color: #8e5572;
-    font-
+    background-color: #171722;
+    font-family: 'Helvetica Thin';
 }
 
 .footer-copyright {
-    color: white;
+    color: #edf2f4;
 }
